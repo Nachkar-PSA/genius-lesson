@@ -460,11 +460,21 @@ ul {
   flex-grow: 1;
 }
 
+.social-icons {
+  display: flex;
+  gap: 22px;
+}
+
+.menu-link {
+  margin-bottom: 16px;
+}
+
 .address-link {
   color: var(--color-primery-light);
   text-decoration: none;
   font-size: 16px;
   font-weight: 300;
+  margin-bottom: 16px;
 }
 
 .address-link:hover {

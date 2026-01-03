@@ -179,18 +179,21 @@
             <form name="contacts-form" autocomplete="off">
               <div class="form-field">
                 <label class="form-label visually-hidden" for="user-name">Ім'я</label>
-                <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ім'я" required />
+                <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ім'я" minlength="4"
+                  maxlength="20" required />
               </div>
 
               <div class="form-field">
                 <label class="form-label visually-hidden" for="user-tel">Телефон</label>
-                <input class="form-input" type="tel" name="user-tel" id="user-tel" placeholder="Телефон" required />
+                <input class="form-input" type="tel" name="user-tel" id="user-tel" placeholder="Телефон"
+                  pattern="^\+[0-9]{12}" title="Введіть коректний номер телефону в форматі +380960000000" required />
               </div>
 
               <div class="form-field">
                 <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
                 <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Електронна пошта"
-                  required />
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  title="Введіть коректну адресу, наприклад: example@mail.com" required />
               </div>
 
               <button class="form-btn btn" type="submit">Замовити дзвінок</button>
@@ -235,22 +238,28 @@
         </nav>
         <address class="footer-address">
           <ul class="address-list">
-            <li><a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-            <li><a class="address-link" href="mailto:info@shop-bakery.com">info@shop-bakery.com</a></li>
-            <li><a class="address-link" href="https://maps.app.goo.gl/YTUnw9JfwPmuPXRf6" target="_blank">
+            <li>
+              <a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07
+              </a>
+            </li>
+            <li>
+              <a class="address-link" href="mailto:info@shop-bakery.com">info@shop-bakery.com</a>
+            </li>
+            <li>
+              <a class="address-link" href="https://maps.app.goo.gl/YTUnw9JfwPmuPXRf6" target="_blank">
                 Україна, м. Київ,вул. Січових Стрільців 54</a>
             </li>
-            <li>
-              <a href="#"><!-- facebook icon  --></a>
-              <svg class="address-icon" width="32" height="32">
-                <use href="./images/icons-sprite.svg#icon-facebook"></use>
-              </svg>
-            </li>
-            <li>
-              <a href="#"><!-- instagram icon  --></a>
-              <svg class="address-icon" width="32" height="32">
-                <use href="./images/icons-sprite.svg#icon-instagram"></use>
-              </svg>
+            <li class="social-icons">
+              <a href="#"><!-- facebook icon  -->
+                <svg class="address-icon" width="32" height="32">
+                  <use href="./images/icons-sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a href="#"><!-- instagram icon  -->
+                <svg class="address-icon" width="32" height="32">
+                  <use href="./images/icons-sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
           </ul>
           <div class="address-info">
@@ -262,7 +271,8 @@
     </div>
   </footer>
 
-  <div class="backdrop 'is-hidden'">
+  <!-- Modal -->
+  <div class="backdrop is-hidden">
     <div class="modal">
       <button class="modal-btn-close" type="button">
         close
@@ -272,19 +282,22 @@
       <!-- form -->
       <form name="modal-form" autocomplete="off">
         <div class="form-field">
-          <label class="form-label visually-hidden" for="user-name">Ім'я</label>
-          <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ім'я" required />
+          <label class="form-label visually-hidden" for="modal-user-name">Ім'я</label>
+          <input class="form-input" type="text" id="modal-user-name" name="user-name" placeholder="Ім'я" minlength="4"
+            maxlength="20" required />
         </div>
 
         <div class="form-field">
-          <label class="form-label visually-hidden" for="user-tel">Телефон</label>
-          <input class="form-input" type="tel" name="user-tel" id="user-tel" placeholder="Телефон" required />
+          <label class="form-label visually-hidden" for="modal-user-tel">Телефон</label>
+          <input class="form-input" type="tel" name="user-tel" id="modal-user-tel" placeholder="Телефон"
+            pattern="^\+[0-9]{12}" required />
         </div>
 
         <div class="form-field">
-          <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
-          <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Електронна пошта"
-            required />
+          <label class="form-label visually-hidden" for="modal-user-email">Електронна пошта</label>
+          <input class="form-input" type="email" name="user-email" id="modal-user-email" placeholder="Електронна пошта"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="Введіть коректну адресу, наприклад: example@mail.com" required />
         </div>
 
         <button class="form-btn btn" type="submit">Замовити дзвінок</button>

@@ -1,0 +1,80 @@
+.advantages-section {
+    padding: 16px 0;
+    background-color: var(--color-brand-normal);
+}
+
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.advantages-list-item {
+    color: var(--color-primery-light);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+/* Chefs section */
+.chefs-section-title {
+    position: relative;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+
+.chefs-section-title::before,
+.chefs-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 24px;
+    width: 352px;
+    border: 2px solid var(--color-brand-light);
+}
+
+.chefs-section-title::before {
+    left: 0;
+}
+
+.chefs-section-title::after {
+    right: 0px;
+}
+
+.section-title .accent {
+    color: var(--color-brand-dark);
+}
+
+.chefs-list {
+    display: flex;
+    gap: 40px 30px;
+    flex-wrap: wrap;
+}
+
+.chefs-item {
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-card {
+    display: flex;
+    gap: 30px;
+}
+
+.chef-photo {
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 1px var(--color-secondary-dark);
+}
+
+.chefs-title {
+    margin-bottom: 16px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.chef-text p {
+    margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+    margin-bottom: 0;
+}

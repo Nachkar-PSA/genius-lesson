@@ -1,0 +1,31 @@
+.form-label {
+    display: block;
+}
+
+.form-input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.17;
+    padding: 16px 24px;
+    width: 100%;
+    border: 1px solid var(--color-secondary-dark);
+    border-radius: 8px;
+    background-color: var(--color-primary-light);
+}
+
+.form-input:focus {
+    border-color: var(--color-brand-normal);
+    outline: none;
+}
+
+.form-input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.17;
+    color: var(--color-secondary-dark);
+}
+
+.form-input:focus::placeholder {
+    color: var(--color-primary-dark);
+}

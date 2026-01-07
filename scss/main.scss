@@ -3,11 +3,13 @@
 @use './base';
 
 @use './utils/utils';
+@use './utils/texts';
 
 @use './components/buttons';
 @use './components/carousel-button';
+@use './components/chef-card';
 @use './components/formats-card';
-@use './components/input';
+@use './components/forms';
 @use './components/links';
 
 @use './layout/advantage-section';
@@ -22,12 +24,3 @@
 @use './layout/modal';
 @use './layout/section';
 @use './layout/traditions-section';
-
-
-
-
-
-
-
-
-

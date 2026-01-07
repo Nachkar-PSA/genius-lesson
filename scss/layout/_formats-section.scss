@@ -1,20 +1,21 @@
-.formats-section-title {
+.formats-section {
+  &__title {
     margin-bottom: 80px;
     text-align: center;
-}
+  }
 
-.formats-container {
+  &__container {
     display: flex;
     align-items: center;
     gap: 32px;
-}
+  }
 
-.formats-list {
+  &__list {
     display: flex;
     gap: 20px;
-}
+  }
 
-.formats-list-item {
+  &__item {
     flex-basis: calc((100% - 40px) / 3);
+  }
 }
-

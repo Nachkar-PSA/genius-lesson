@@ -4,24 +4,26 @@
     left: 0;
     width: 100%;
     padding-top: 32px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        gap: 24px;
+    }
+    
+    &__menu {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        gap: 64px;
+    }
 }
 
-.header-container {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
 
-.header-nav {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    gap: 24px;
-}
-
-.header-menu {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    gap: 64px;
-}

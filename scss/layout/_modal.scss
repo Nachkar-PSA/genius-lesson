@@ -22,10 +22,15 @@
   position: relative;
   width: 100%;
   max-width: 880px;
-  height: 100%;
-  max-height: 880px;
+  max-height: 90vh;
+  max-height: 600px;
   padding: 128px;
   background-color: var(--color-primary-light);
+  background-image: url('../../images/modal-bread.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto;
+  background-attachment: local;
   border-radius: 32px;
   overflow-y: auto;
 
@@ -56,11 +61,5 @@
     font-family: 'Roboto', sans-serif;
     margin: 0 auto 72px;
     text-align: center;
-  }
-
-  &__img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
   }
 }

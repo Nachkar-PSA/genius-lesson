@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modern backery</title>
+  <title>Modern Bakery</title>
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -32,7 +32,14 @@
           </ul>
         </nav>
         <!-- request call back -->
-        <button class="btn modal-btn-open" type="button">Замовити дзвінок</button>
+        <button class="header__btn btn modal-btn-open" type="button">Замовити дзвінок
+        </button>
+        <button class="header__burger" type="button">
+          <svg width="24" height="24">
+            <use href="./images/icons-sprite.svg#icon-burger-menu">
+            </use>
+          </svg>
+        </button>
       </div>
     </div>
   </header>
@@ -74,7 +81,7 @@
             <p class="traditions-section__text">та висока якість обслуговування!
             </p>
           </div>
-          <img src="./images/baker-man.jpg" alt="Baker man">
+          <img class="traditions-section__container-image" src="./images/baker-man.jpg" alt="Baker man">
         </div>
       </div>
     </section>
@@ -256,13 +263,14 @@
               </a>
               <a href="#"><!-- instagram icon  -->
                 <svg class="address-icon" width="32" height="32">
-                  <use href="./images/icons-sprite.svg#icon-instagram"></use>
+                  <use href="./images/icons-sprite.svg#icon-instagram">
+                  </use>
                 </svg>
               </a>
             </li>
           </ul>
           <div class="address-info">
-            <a class="address-link" href="http://" target="_blank">Політика конфіденційності</a>
+            <a class="address-link" href="#" target="_blank">Політика конфіденційності</a>
             <p class="address-copyright">&copy; 2022 Дані захищені</p>
           </div>
         </address>
@@ -271,10 +279,12 @@
   </footer>
 
   <!-- Modal -->
-  <div class="backdrop 'is-hidden'">
+  <div class="backdrop is-hidden">
     <div class="modal">
-      <button class="modal__btn-close modal-btn-close" type="button">
-        close
+      <button class="modal__btn-close modal-btn-close close-btn" type="button">
+        <svg class="close-btn__icon" viewBox="0 0 32 32">
+          <use href="./images/icons-sprite.svg#icon-close"></use>
+        </svg>
       </button>
       <h2 class="modal__title">Замовити дзвінок</h2>
       <p class="modal__text">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
@@ -305,7 +315,6 @@
           <a class="form-terms__link" href="#">з політикою конфіденційності</a>
         </p>
       </form>
-      <img class="modal__img" src="./images/modal-bread.png" alt="Bread">
     </div>
   </div>
 

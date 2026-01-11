@@ -1,29 +1,46 @@
+@use '../utils/variables' as *;
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-top: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
 
-    &__container {
-        display: flex;
-        align-items: center;
-        gap: 24px;
-    }
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
 
-    &__nav {
-        display: flex;
-        align-items: center;
-        flex-grow: 1;
-        gap: 24px;
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 24px;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 64px;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
     }
-    
-    &__menu {
-        display: flex;
-        justify-content: center;
-        flex-grow: 1;
-        gap: 64px;
+  }
+
+  &__btn {
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
     }
+  }
+
+  &__burger {
+    display: none;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: block;
+    }
+  }
 }
-
-

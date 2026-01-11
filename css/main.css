@@ -1,10 +1,10 @@
 :root {
-  --color-brand-normal: #819B57;
+  --color-brand-normal: #819b57;
   --color-brand-dark: #465929;
-  --color-brand-light: #CFCFBC;
-  --color-primary-light: #FAF4EA;
-  --color-primary-dark: #31261A;
-  --color-secondary-dark: #A18268;
+  --color-brand-light: #cfcfbc;
+  --color-primary-light: #faf4ea;
+  --color-primary-dark: #31261a;
+  --color-secondary-dark: #a18268;
 }
 
 *,
@@ -48,6 +48,14 @@ ul {
   list-style-type: none;
 }
 
+button {
+  background: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
 .visually-hidden {
   position: absolute;
   left: -10000px;
@@ -87,7 +95,22 @@ ul {
 .btn:hover {
   background-color: transparent;
   color: var(--color-brend-dark);
-  cursor: pointer;
+}
+
+.close-btn {
+  width: 32px;
+  height: 32px;
+  color: var(--color-primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close-btn__icon {
+  width: 32px;
+  height: 32px;
+}
+.close-btn:hover svg {
+  color: var(--color-brand-normal);
 }
 
 .carousel-button {
@@ -440,6 +463,24 @@ ul {
   flex-grow: 1;
   gap: 64px;
 }
+@media screen and (max-width: 1280px) {
+  .header__menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .header__btn {
+    display: none;
+  }
+}
+.header__burger {
+  display: none;
+}
+@media screen and (max-width: 1280px) {
+  .header__burger {
+    display: block;
+  }
+}
 
 .hero-section {
   padding: 272px 0;
@@ -479,10 +520,15 @@ ul {
   position: relative;
   width: 100%;
   max-width: 880px;
-  height: 100%;
-  max-height: 880px;
+  max-height: 90vh;
+  max-height: 600px;
   padding: 128px;
   background-color: var(--color-primary-light);
+  background-image: url("../../images/modal-bread.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto;
+  background-attachment: local;
   border-radius: 32px;
   overflow-y: auto;
 }
@@ -510,11 +556,6 @@ ul {
   margin: 0 auto 72px;
   text-align: center;
 }
-.modal__img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
 
 .section {
   padding: 48px 0;
@@ -532,6 +573,9 @@ ul {
   display: flex;
   justify-content: space-between;
   gap: 24px;
+}
+.traditions-section__container-image {
+  border-radius: 400px 400px 0 0;
 }
 .traditions-section__content {
   max-width: 710px;
